@@ -1,0 +1,411 @@
+<style>
+  /* 기본 스타일 */
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  body {
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f0f2f5;
+  }
+
+  /* 헤더 스타일 */
+  header {
+    text-align: center;
+    padding: 3rem;
+    background: linear-gradient(135deg, #4e54c8, #8f94fb);
+    color: #fff;
+    border-bottom-left-radius: 50% 20px;
+    border-bottom-right-radius: 50% 20px;
+  }
+
+  header h1 {
+    font-size: 2.5rem;
+    margin-bottom: 0.5rem;
+  }
+
+  header p {
+    font-size: 1.1rem;
+  }
+
+  /* 섹션 스타일 */
+  section {
+    padding: 3rem 1rem;
+    max-width: 800px;
+    margin: auto;
+  }
+
+  h2 {
+    font-size: 1.8rem;
+    color: #4e54c8;
+    border-bottom: 2px solid #4e54c8;
+    padding-bottom: 0.5rem;
+    margin-bottom: 1rem;
+    text-align: center;
+  }
+
+  /* About 섹션 스타일 */
+  #about p {
+    text-align: center;
+    font-size: 1.1rem;
+    color: #555;
+    line-height: 1.8;
+  }
+
+  /* Skills 섹션 스타일 */
+  #skills ul {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  #skills li {
+    background: #8f94fb;
+    color: #fff;
+    padding: 0.7rem 1.2rem;
+    margin: 0.5rem;
+    border-radius: 20px;
+    font-weight: bold;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  }
+
+  /* Projects 섹션 스타일 */
+  .project {
+    background: #fff;
+    padding: 1.5rem;
+    margin: 1rem 0;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.2s;
+  }
+
+  .project:hover {
+    transform: scale(1.02);
+  }
+
+  .project h3 {
+    color: #4e54c8;
+  }
+
+  .project a {
+    display: inline-block;
+    margin-top: 0.5rem;
+    padding: 0.4rem 0.8rem;
+    color: #4e54c8;
+    border: 1px solid #4e54c8;
+    border-radius: 20px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.3s;
+  }
+
+  .project a:hover {
+    background: #4e54c8;
+    color: #fff;
+  }
+
+  /* Contact 섹션 스타일 */
+  #contact p {
+    text-align: center;
+    font-size: 1.1rem;
+    color: #333;
+    line-height: 1.6;
+  }
+
+  #contact a {
+    color: #4e54c8;
+    font-weight: bold;
+    text-decoration: none;
+    transition: color 0.3s;
+  }
+
+  #contact a:hover {
+    color: #8f94fb;
+  }
+
+  /* 푸터 스타일 */
+  footer {
+    text-align: center;
+    padding: 1.5rem;
+    background: #4e54c8;
+    color: #fff;
+    margin-top: 3rem;
+  }
+</style>
+
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>개발자 자기소개</title>
+  </head>
+  <body>
+    <!-- Header Section -->
+    <header>
+      <h1>홍길동</h1>
+      <p>웹 개발자</p>
+      <p>안녕하세요! 사용자 경험을 중시하는 웹 개발자 홍길동입니다.</p>
+    </header>
+
+    <!-- About Section -->
+    <section id="about">
+      <h2>About Me</h2>
+      <p>
+        저는 프론트엔드와 백엔드 모두 관심이 있으며, 최신 웹 기술을 활용하여
+        좋은 사용자 경험을 제공하는 데 주력하고 있습니다. 항상 새로운 기술을
+        배우고, 발전해 나가는 것을 좋아합니다.
+      </p>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills">
+      <h2>Skills</h2>
+      <ul>
+        <li>HTML / CSS / JavaScript</li>
+        <li>React / Vue.js</li>
+        <li>Node.js / Express</li>
+        <li>Python / Django</li>
+        <li>MySQL / MongoDB</li>
+      </ul>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects">
+      <h2>Projects</h2>
+      <div class="project">
+        <h3>프로젝트 이름 1</h3>
+        <p>프로젝트 설명</p>
+        <a href="https://example.com" target="_blank">프로젝트 링크</a>
+      </div>
+      <div class="project">
+        <h3>프로젝트 이름 2</h3>
+        <p>프로젝트 설명</p>
+        <a href="https://example.com" target="_blank">프로젝트 링크</a>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+      <h2>Contact</h2>
+      <p>Email: example@example.com</p>
+      <p>
+        GitHub:
+        <a href="https://github.com/yourusername" target="_blank"
+          >github.com/yourusername</a
+        >
+      </p>
+      <p>
+        LinkedIn:
+        <a href="https://linkedin.com/in/yourusername" target="_blank"
+          >linkedin.com/in/yourusername</a
+        >
+      </p>
+    </section>
+  </body>
+</html>
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>개발자 자기소개</title>
+    <style>
+      /* 기존 스타일 */
+      /* 기본 스타일 */
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+        line-height: 1.6;
+        color: #333;
+        background-color: #f0f2f5;
+      }
+
+      header {
+        text-align: center;
+        padding: 3rem;
+        background: linear-gradient(135deg, #4e54c8, #8f94fb);
+        color: #fff;
+        border-bottom-left-radius: 50% 20px;
+        border-bottom-right-radius: 50% 20px;
+      }
+
+      header h1 {
+        font-size: 2.5rem;
+        margin-bottom: 0.5rem;
+      }
+
+      header p {
+        font-size: 1.1rem;
+      }
+
+      section {
+        padding: 3rem 1rem;
+        max-width: 800px;
+        margin: auto;
+      }
+
+      h2 {
+        font-size: 1.8rem;
+        color: #4e54c8;
+        border-bottom: 2px solid #4e54c8;
+        padding-bottom: 0.5rem;
+        margin-bottom: 1rem;
+        text-align: center;
+      }
+
+      #about p {
+        text-align: center;
+        font-size: 1.1rem;
+        color: #555;
+        line-height: 1.8;
+      }
+
+      #about .extra-info {
+        display: none;
+        margin-top: 1rem;
+        font-size: 1.1rem;
+        color: #777;
+        line-height: 1.8;
+      }
+
+      #skills ul {
+        list-style-type: none;
+        padding: 0;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+      }
+
+      #skills li {
+        background: #8f94fb;
+        color: #fff;
+        padding: 0.7rem 1.2rem;
+        margin: 0.5rem;
+        border-radius: 20px;
+        font-weight: bold;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+      }
+
+      .project {
+        background: #fff;
+        padding: 1.5rem;
+        margin: 1rem 0;
+        border-radius: 10px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        transition: transform 0.2s;
+      }
+
+      .project:hover {
+        transform: scale(1.02);
+      }
+
+      .project h3 {
+        color: #4e54c8;
+      }
+
+      .project a {
+        display: inline-block;
+        margin-top: 0.5rem;
+        padding: 0.4rem 0.8rem;
+        color: #4e54c8;
+        border: 1px solid #4e54c8;
+        border-radius: 20px;
+        text-decoration: none;
+        font-weight: bold;
+        transition: 0.3s;
+      }
+
+      .project a:hover {
+        background: #4e54c8;
+        color: #fff;
+      }
+
+      #contact p {
+        text-align: center;
+        font-size: 1.1rem;
+        color: #333;
+        line-height: 1.6;
+      }
+
+      #contact a {
+        color: #4e54c8;
+        font-weight: bold;
+        text-decoration: none;
+        transition: color 0.3s;
+      }
+
+      #contact a:hover {
+        color: #8f94fb;
+      }
+
+      footer {
+        text-align: center;
+        padding: 1.5rem;
+        background: #4e54c8;
+        color: #fff;
+        margin-top: 3rem;
+      }
+
+      /* 버튼 스타일 */
+      .toggle-button {
+        display: inline-block;
+        margin-top: 1rem;
+        padding: 0.6rem 1.2rem;
+        color: #fff;
+        background-color: #4e54c8;
+        border: none;
+        border-radius: 20px;
+        font-weight: bold;
+        cursor: pointer;
+        transition: background-color 0.3s;
+      }
+
+      .toggle-button:hover {
+        background-color: #333;
+      }
+    </style>
+  </head>
+  <body>
+      <div class="extra-info">
+        <p>
+          추가 설명: 다양한 프레임워크와 언어를 활용한 프로젝트 경험이 있으며,
+          팀워크와 커뮤니케이션 능력에도 자신이 있습니다.
+        </p>
+      </div>
+      <button class="toggle-button" onclick="toggleExtraInfo()">
+        자세히 보기
+      </button>
+    </section>
+
+    <!-- JavaScript -->
+    <script>
+      function toggleExtraInfo() {
+        const extraInfo = document.querySelector(".extra-info");
+        const button = document.querySelector(".toggle-button");
+
+        if (
+          extraInfo.style.display === "none" ||
+          extraInfo.style.display === ""
+        ) {
+          extraInfo.style.display = "block";
+          button.textContent = "간단히 보기";
+        } else {
+          extraInfo.style.display = "none";
+          button.textContent = "자세히 보기";
+        }
+      }
+    </script>
+  </body>
+</html>
